@@ -16,7 +16,7 @@ async def travel_planner(request: Request):
 
         # 2. Setup Gemini
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
 
         # 3. Get User Input
         data = await request.json()
