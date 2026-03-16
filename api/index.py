@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 import google.generativeai as genai
 import os
-
+@app.post("/api/index")
 app = FastAPI()
 
 # Connect to your Google Key
