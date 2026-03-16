@@ -7,7 +7,7 @@ export default function TravelPage() {
 
   const askAI = async () => {
     setResult("Thinking...");
-    const response = await fetch("/api/py/hello", {
+    const response = await fetch("/api", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: input }),
